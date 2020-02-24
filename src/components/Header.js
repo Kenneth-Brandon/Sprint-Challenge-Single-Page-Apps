@@ -13,6 +13,7 @@ const NavBar = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #000;
+  margin-bottom: 2%;
 `;
 
 function Header() {

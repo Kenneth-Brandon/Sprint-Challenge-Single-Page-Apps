@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function LocationCard(props) {
+function LocationCard(props) {
   return (
     <div>
-      {props.location.map(place => (
+      {props.episode.map(place => (
         <h1>{place.name}</h1>
       ))}
     </div>
   );
 }
+
+export default LocationCard;

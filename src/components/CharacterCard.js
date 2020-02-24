@@ -23,7 +23,7 @@ const CardRight = styled.div`
 function CharacterCard(props) {
   return (
     <Card key={props.id}>
-      <img src={props.image} />
+      <img src={props.image} alt="Characters From Rick & Morty" />
 
       <CardRight>
         <h2>Name: {props.name}</h2>
