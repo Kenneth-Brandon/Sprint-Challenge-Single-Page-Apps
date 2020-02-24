@@ -125,7 +125,7 @@ function CharacterList() {
           name={data.name}
           image={data.image}
           species={data.species}
-          status={data.staus}
+          status={data.status}
         />
       ))}
     </Container>

@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-function SearchForm() {
-  const [searchTerm, setSearchTerm] = useState("");
-
+export default function SearchForm({ searchTerm, setSearchTerm }) {
   return (
     <section className="search-form">
       <form>
-        <label>Search: </label>
-        <input
-          name="search"
-          placeholder="Search"
-          onChange={event => setSearchTerm(event.target.value)}
-          value={searchTerm}
-        />
+        <label>
+          Search:
+          <input
+            name="search"
+            placeholder="Search"
+            onChange={event => setSearchTerm(event.target.value)}
+            value={searchTerm}
+          />
+        </label>
       </form>
     </section>
   );
 }
-
-export default SearchForm;

@@ -1,4 +1,5 @@
 import React from "react";
+
 import styled from "styled-components";
 
 const Card = styled.div`
@@ -21,12 +22,13 @@ const CardRight = styled.div`
 `;
 
 function CharacterCard(props) {
+  console.log(props);
   return (
     <Card key={props.id}>
-      <img src={props.image} alt="Characters From Rick & Morty" />
+      <img src={props.image} />
 
       <CardRight>
-        <h2>Name: {props.name}</h2>
+        <h2>Name : {props.name}</h2>
         <h3>Species: {props.species}</h3>
         <h3>Status: {props.status}</h3>
       </CardRight>
